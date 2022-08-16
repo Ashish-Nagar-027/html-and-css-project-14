@@ -4,64 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
     <title>Dance Home Page</title>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="left-bg-img"></div>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <img src="./images/Logo.png" alt="logo here" class="logo-img">
-            </div>
-            <div class="nav-right">
+    <div class="container">
+        <!-- left container -->
+        <div class="left-section">
+            <img src="./assets/Logo.png" alt="logo" class="logo-img">
+            <img src="./assets/left-bg.jpg" alt="image" class="left-bg-img">
+        </div>
+        <div class="right-section">
+            <nav>
+                <img src="./assets/Logo.png" alt="" class="logo-again">
                 <div class="line"></div>
-                <nav>
-                    <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
-                </ul>
-                </nav>
+                <div class="nav-items">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Portfoio</a>
+                <a href="#">Contact</a>
             </div>
+            <div class="ham"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg></div>
+            </nav>
+            <!-- main section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-content">
+                        <div class="hero-left">
+                            <h1>
+                                <p>Crea-</p>
+                                <p><span>tivity.</span>
+                                <span>is our ingredient.</span>
+                            </p>
+                            </h1>
+                        </div>
+                        <div class="hero-right">
+                            <img src="./assets/Twitter Icon.svg" alt="twitter">
+                            <img src="./assets/Instagram Icon.svg" alt="insta">
+                            <img src="./assets/Facebook Icon.svg" alt="facebook">
+                            <img src="./assets/Email Icon.svg" alt="mail">
+                        </div>
+                    </div>
+                </div>
+                    <div class="hero-btn">
+                        <button class="btn">Check Our Package</button>
+                    </div>
+            </section>
+            <!-- bottom section -->
+            <section class="bottom-section">
+                <div class="left-bottom">
+                    <ul class="skills-list">
+                        <li class="skill-item active"><span>Photography</span></li>
+                        <li class="skill-item"><span>Videography</span></li>
+                        <li class="skill-item"><span>Graphic Design</span></li>
+                        <li class="skill-item"><span>Illstration</span></li>
+                        <li class="skill-item"><span>Animation</span></li>
+                    </ul>
+                </div>
+                <div class="middle-bottom">
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <div class="quote">
+                        We help you to create the best graphics, photos, videos, animations and illustrations
+                    </div>
+                    <div class="last-img">
+                        <img src="./assets/pexels-cottonbro-7974875.jpg" alt="dance-img">
+                    </div>
+                </div>
+                <div class="last-arrow">
+                    <img src="./assets/icons8-down-arrow-100.png" alt="">
+                </div>
+            </section>
         </div>
-    </header>
-    <main>
-        <div class="after-nav">
-            <h1 class="creativity"> <span class="up"> Crea-</span>  <br><span class="down">tivity.</span><span class="para">is our<br>ingredient.</span></h1>
-            <div class="social-icons">
-                <img src="./images/Twitter Icon.svg" alt="">
-                <img src="./images/Instagram Icon.svg" alt="">
-                <img src="./images/Facebook Icon.svg" alt="">
-                <img src="./images/Email Icon.svg" alt="">
-            </div>
-        </div>
-        <!-- button -->
-        <div class="button">
-            <button class="btn">Check Our Package</button>
-        </div>
-        <!-- last section of site -->
-        <div class="last-section">
-            <div class="skills">
-                <ul>
-                    <li class="font-clr-black">Photography</li>
-                    <li>Videography</li>
-                    <li>Graphic Design</li>
-                    <li>Illustration</li>
-                    <li>Animaton</li>
-                </ul>
-            </div>
-            <div class="part-2">
-                <p class="quote">”</p>
-                <p class="mb-1 our-para">We help you to create the best graphics,
-                   <br> photos, videos animations and illustrations.
-                </p>
-                 <img class="width-img" src="./images/pexels-cottonbro-7974875.jpg" alt="">
-            </div> 
-            <span class="down-arrow">&#8595;</span>
-
-        </div>
-    </main>
+    </div>
 </body>
 </html>
